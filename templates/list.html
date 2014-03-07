@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <ol>
+      {% for i in items %}
+      <li><a href="{{ i.url }}">{{ i.name }}</a></li>
+      {% endfor %}
+    </ol>
+  </body>
+</html>
