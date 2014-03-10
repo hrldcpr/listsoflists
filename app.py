@@ -26,7 +26,7 @@ def list(n, slug):
                         dict(n=n))
             rows = cur.fetchall()
 
-    items = [Item(Markup(r[0]), r[1]) for r in rows]
+    items = [Item(Markup(r[0]), 'http://www.buzzfeed.com' + r[1]) for r in rows]
     return render_template('list.html', title=slug, items=items)
 
 if __name__ == '__main__':
