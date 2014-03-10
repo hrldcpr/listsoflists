@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+.love-on-top {
+  height: 80px;
+  background-color: green;
+}
+
+.love-on-top * {
+  display: inline-block;
+}
+
+.love-on-top .title {
+  font-family: 'Montserrat', sans-serif;
+  color: #EE3322;
+  font-size: 40px;
+  font-weight: 700;
+  width: 700px;
+}
+
+.love-on-top .badgey {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+  /* Safari */
+  -webkit-transform: rotate(325deg);
+  /* Firefox */
+  -moz-transform: rotate(325deg);
+  /* IE */
+  -ms-transform: rotate(325deg);
+  /* Opera */
+  -o-transform: rotate(325deg);
+  /* Standard */
+  transform: rotate(325deg);
+}
+
+
+.yellow {
+  background-color: #FFEE00;
+}
+
+.orange {
+    background-color: #EE3322;
+}
