@@ -1,9 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+/*padding: top right bottom left;*/
 
 .love-on-top {
-  height: 80px;
-  background-color: green;
+  height: 65px;
 }
 
 .love-on-top * {
@@ -19,12 +19,13 @@
 }
 
 .love-on-top .badgey {
+  cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   height: 50px;
   width: 50px;
+  box-shadow: 0.5px 1px 0.5px #888888;
   border-radius: 50%;
-
   /* Safari */
   -webkit-transform: rotate(325deg);
   /* Firefox */
@@ -37,11 +38,37 @@
   transform: rotate(325deg);
 }
 
-
 .yellow {
   background-color: #FFEE00;
 }
 
 .orange {
     background-color: #EE3322;
+    color: white;
 }
+
+.love-on-top .lol {
+  padding: 10px 10px 7px 7px;
+  font-size: 20px;
+}
+
+.love-on-top .omg {
+  padding: 12px 12px 6px 4px;
+  font-size: 18px; 
+}
+
+.love-on-top .trashy {
+  padding: 15px 6px 6px 3px;
+  font-size: 14px; 
+}
+
+.love-on-top .fail {
+  padding: 10px 10px 10px 8px;
+  font-size: 22px; 
+}
+
+.love-on-top .lightning {
+  padding: 6px 10px 10px 16px;
+  font-size: 13px;
+}
+
