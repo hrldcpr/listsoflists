@@ -6,6 +6,7 @@
   height: 75px;
   padding: 5px;
   overflow:hidden;
+  position: relative;
 }
 
 .love-on-top * {
@@ -17,6 +18,7 @@
   color: #EE3322;
   font-size: 40px;
   font-weight: 700;
+  position: absolute;
 }
 
 .love-on-top .badgey {
@@ -41,8 +43,8 @@
 
 .badgeys {
   width: 430px;
-  position:relative;
-
+  position: relative;
+  float: right;
 }
 
 .yellow {
@@ -86,18 +88,22 @@
   border-color: #C2C2C2;
   padding: 1px 0px 1px 0px;
   height: 38px;
+  display: relative;
 }
 
 .grey-nav {
   width: 100%;
   background-color: #F5F5F5;
   height: 34px;
+  display: absolute;
 }
 
 .pagination>li>a {
   color: black;
   background-color: #F5F5F5;
   font-weight: bold;
+  display: absolute;
+  top: -20px;
 }
 
 .pagination>li>a:hover {
@@ -107,6 +113,7 @@
 
 .icony {
   color: #BFBFBF;
+  float: right;
 }
 
 .icony:hover {
