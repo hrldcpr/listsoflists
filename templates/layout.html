@@ -5,27 +5,40 @@
   <title>ListOfLists</title>
   <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
   <link href="static/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"></link>
-  <script src="static/js/bootstrap.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  </link>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"></link>
   <link href="static/custom.css" rel="stylesheet" type="text/css"></link>
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div class="container">
     <div class="love-on-top">
       <div class="title">LIST OF LISTS</div>
-      <div class="yellow badgey lol">LOL</div>
-      <div class="yellow badgey lol">win</div>
-      <div class="yellow badgey omg">omg</div>
-      <div class="yellow badgey omg">cute</div>
-      <div class="yellow badgey trashy">trashy</div>
-      <div class="yellow badgey fail">fail</div>
-      <div class="yellow badgey lol">wtf</div>
-      <div class="orange badgey lightning"><i class="fa fa-bolt fa-3x"></i></div>
+      <div class="badgeys">
+        <div class="yellow badgey lol">LOL</div>
+        <div class="yellow badgey lol">win</div>
+        <div class="yellow badgey omg">omg</div>
+        <div class="yellow badgey omg">cute</div>
+        <div class="yellow badgey trashy">trashy</div>
+        <div class="yellow badgey fail">fail</div>
+        <div class="yellow badgey lol">wtf</div>
+        <div class="orange badgey lightning"><i class="fa fa-bolt fa-3x"></i></div>
+      </div>
     </div><!--/.love-on-top -->
-    <!-- Static navbar -->
-    <!-- <div class="navbar navbar-default navbar-static-top" role="navigation"> -->
+  </div><!--/.container -->
+  <div class="black-border-nav">
+    <div class="grey-nav">
       <div class="navbar-collapse collapse navbar-static-top">
         <ul class="pagination nav navbar-nav">
           <li><a href="/">NEWS</a></li>
@@ -33,13 +46,28 @@
           <li><a href="/">LIFE</a></li>
           <li><a href="/">VIDEO</a></li>
           <li><a href="/">MORE</a></li>
+          <li>
+            <div class="fb-like" data-href="https://syzygy.st" data-width="48px" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+          </li>
+          <li>
+            <a href="https://twitter.com/hrldcpr" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @hrldcpr</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </li>
+          <li>
+            <i class="fa fa-search fa-2x icony"></i>
+          </li>
+          <li>
+            <i class="fa fa-user fa-2x icony"></i>
+          </li>
         </ul>
-      </div><!--/.nav-collapse -->
-   <!--  </div> --><!--/.navbar navbar-default navbar-static-top -->
-  </div><!--/.container -->
+      </div><!--/.nav-collapse-->
+    </div>
+  </div>
 
-  {% block content %}
-  {% endblock %}
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
 
 </body>
 

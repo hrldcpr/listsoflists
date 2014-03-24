@@ -3,7 +3,9 @@
 /*padding: top right bottom left;*/
 
 .love-on-top {
-  height: 65px;
+  height: 75px;
+  padding: 5px;
+  overflow:hidden;
 }
 
 .love-on-top * {
@@ -15,7 +17,6 @@
   color: #EE3322;
   font-size: 40px;
   font-weight: 700;
-  width: 700px;
 }
 
 .love-on-top .badgey {
@@ -24,7 +25,7 @@
   font-weight: 700;
   height: 50px;
   width: 50px;
-  box-shadow: 0.5px 1px 0.5px #888888;
+  box-shadow: 1px 1px 2px #A0A0A0;
   border-radius: 50%;
   /* Safari */
   -webkit-transform: rotate(325deg);
@@ -36,6 +37,12 @@
   -o-transform: rotate(325deg);
   /* Standard */
   transform: rotate(325deg);
+}
+
+.badgeys {
+  width: 430px;
+  position:relative;
+
 }
 
 .yellow {
@@ -72,3 +79,36 @@
   font-size: 13px;
 }
 
+.black-border-nav {
+  width: 100%;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #C2C2C2;
+  padding: 1px 0px 1px 0px;
+  height: 38px;
+}
+
+.grey-nav {
+  width: 100%;
+  background-color: #F5F5F5;
+  height: 34px;
+}
+
+.pagination>li>a {
+  color: black;
+  background-color: #F5F5F5;
+  font-weight: bold;
+}
+
+.pagination>li>a:hover {
+  background-color: white;
+  color: black;
+}
+
+.icony {
+  color: #BFBFBF;
+}
+
+.icony:hover {
+  color: #3793f0;
+}
